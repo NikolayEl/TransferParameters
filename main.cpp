@@ -10,11 +10,14 @@ void main()
 	string delimetr = "--------------------";
 	setlocale(LC_ALL, "");
 	int a = 2, b = 3;
+	cout << endl << "In main" << endl << endl;
 	cout << a << "\t \t \t" << b << endl;
 	cout << &a << "\t"  << &b << endl;
 	cout << delimetr << endl << delimetr << endl;
+	cout << endl <<"In finction" << endl << endl;
 	Exchange(&a, &b);
-	cout << delimetr << endl << delimetr << endl;
+	cout << endl << delimetr << endl << delimetr << endl;
+	cout << endl << "After exchange" << endl << endl;
 	cout << a << "\t \t \t" << b << endl;
 	cout << &a << "\t" << &b << endl;
 
